@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jheniffer Biral | Portfolio</title>
+    
+    <!-- Importando as Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Conectando o arquivo de design CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <nav class="header">
+        <div class="idiomas">
+            <span class="idioma-btn ativo">PT</span> | 
+            <span class="idioma-btn">EN</span> | 
+            <span class="idioma-btn">FR</span> | 
+            <span class="idioma-btn">ES</span>
+        </div>
+        
+        <div class="nome-logo">Jheniffer Matias Biral</div>
+        
+        <button class="btn-pdf" id="btn-pdf">GERAR PDF</button>
+    </nav>
+
+    <!-- HERO SECTION (Frase) -->
+    <header class="hero">
+        <div class="hero-circulo"></div>
+        <div class="hero-textos">
+            <h1 id="hero-citacao">"Juntar-se é um começo; manter-se unido é progresso; trabajar junto é sucesso." — Henry Ford</h1>
+            <p id="hero-subtitulo">e eu estou ansiosa para fazer sucesso com vocês :)</p>
+        </div>
+    </header>
+    <!-- TIMELINE (Locais em que pude colaborar) -->
+    <section class="timeline-section">
+        <h2 class="secao-titulo" id="timeline-titulo">Locais em que pude colaborar</h2>
+        
+        <div class="timeline-container">
+            <div class="linha-base"></div>
+            
+            <!-- Nó 1 -->
+            <div class="timeline-item">
+                <div class="timeline-ponto ativo"></div>
+                <div class="timeline-card">
+                    <h3 class="card-empresa">Hype Empreendimentos</h3>
+                    <span class="card-tempo">1a 6m</span>
+                </div>
+            </div>
+            
+            <!-- Nó 2 -->
+            <div class="timeline-item">
+                <div class="timeline-ponto"></div>
+                <div class="timeline-card">
+                    <h3 class="card-empresa">Renault do Brasil</h3>
+                    <span class="card-tempo">2a 1m</span>
+                </div>
+            </div>
+            
+            <!-- Nó 3 -->
+            <div class="timeline-item">
+                <div class="timeline-ponto"></div>
+                <div class="timeline-card">
+                    <h3 class="card-empresa">UFPR (Iniciação Científica)</h3>
+                    <span class="card-tempo">1a 1m</span>
+                </div>
+            </div>
+            
+            <!-- Nó 4 -->
+            <div class="timeline-item">
+                <div class="timeline-ponto"></div>
+                <div class="timeline-card">
+                    <h3 class="card-empresa">Grupo Boticário</h3>
+                    <span class="card-tempo">1a 3m</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Cartão expansível da descrição -->
+        <div class="timeline-descricao">
+            <p id="timeline-texto">Gestão administrativa de obras e controle rigoroso de qualidade em construções. Auditoria de procedimentos de controladoria para garantir eficiência e conformidade técnica no canteiro de obras.</p>
+        </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section class="sobre-section">
+        <h2 class="secao-titulo" id="sobre-titulo">Sobre mim</h2>
+        <div class="sobre-conteudo" id="sobre-textos">
+            <p>Sou estudante de Engenharia de Produção com uma base técnica em Eletrônica. Minha atuação profissional é focada em conectar as operações de chão de fábrica à estratégia corporativa, unindo otimização de processos com a transformação digital.</p>
+            <p>Nos últimos anos, construí minha trajetória atuando em operações de indústrias de alta complexidade. Do setor automotivo em supply ao setor de beleza em governança de engenharia, atuando no suporte à tomada de decisão estratégica.</p>
+            <p>Gosto de combinar o entendimento técnico prático com metodologias de melhoria contínua. Fora do ambiente corporativo, atuo como ritmista na Bateria C7 e exploro edição audiovisual e design para exercitar um pensamento lógico mais inovador.</p>
+        </div>
+    </section>
+    <!-- EDUCAÇÃO (Tabs) -->
+    <section class="educacao-section">
+        <h2 class="secao-titulo" id="educacao-titulo">Locais onde aprendi</h2>
+        
+        <div class="tabs-container">
+            <!-- Menu Lateral -->
+            <div class="tabs-menu">
+                <div class="tab-btn ativo">IFPR</div>
+                <div class="tab-btn">UFPR</div>
+            </div>
+            
+            <!-- Conteúdo da Aba -->
+            <div class="tab-conteudo">
+                <h3 id="tab-titulo">IFPR</h3>
+                <h4 id="tab-subtitulo">Técnico em Eletrônica</h4>
+                <p id="tab-descricao">A base técnica que estruturou meu pensamento lógico e analítico, conectando o entendimento de hardware e sistemas à resolução prática de problemas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICAÇÕES (Grid) -->
+    <section class="certificacoes-section">
+        <h2 class="secao-titulo" id="certificacoes-titulo">Certificações</h2>
+        
+        <div class="certificacoes-grid">
+            <div class="cert-card">
+                <h4>Francês</h4>
+                <span>UTFPR</span>
+            </div>
+            <div class="cert-card">
+                <h4>Gestão do tempo e organização</h4>
+                <span>Escola Conquer</span>
+            </div>
+            <div class="cert-card">
+                <h4>Comunicação e Oratória</h4>
+                <span>Escola Conquer</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES (Categorizadas) -->
+    <section class="habilidades-section">
+        <h2 class="secao-titulo" id="habilidades-titulo">Habilidades</h2>
+        
+        <div class="habilidades-grid">
+            <!-- Coluna 1: Soft Skills -->
+            <div class="habilidade-categoria">
+                <h3 class="categoria-titulo" id="titulo-soft">Soft Skills</h3>
+                <div class="pilulas-container" id="container-soft">
+                    <div class="skill-pilula">Comunicação Assertiva</div>
+                    <div class="skill-pilula">Inteligência Emocional</div>
+                    <div class="skill-pilula">Resolução de Problemas</div>
+                    <div class="skill-pilula">Visão Sistêmica</div>
+                </div>
+            </div>
+
+            <!-- Coluna 2: Idiomas -->
+            <div class="habilidade-categoria">
+                <h3 class="categoria-titulo" id="titulo-idiomas">Idiomas</h3>
+                <div class="pilulas-container" id="container-idiomas">
+                    <div class="skill-pilula">Português (Nativo)</div>
+                    <div class="skill-pilula">Inglês (B2)</div>
+                    <div class="skill-pilula">Espanhol (A2)</div>
+                    <div class="skill-pilula">Francês (A1)</div>
+                </div>
+            </div>
+
+            <!-- Coluna 3: Software -->
+            <div class="habilidade-categoria">
+                <h3 class="categoria-titulo" id="titulo-hard">Software</h3>
+                <div class="pilulas-container" id="container-hard">
+                    <div class="skill-pilula">Looker Studio</div>
+                    <div class="skill-pilula">Ecossistema Google</div>
+                    <div class="skill-pilula">Symphony (APS, GOPRO)</div>
+                    <div class="skill-pilula">Notion</div>
+                    <div class="skill-pilula">DaVinci Resolve</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTO (Cartão) -->
+    <section class="depoimento-section">
+        <h2 class="secao-titulo" id="depoimento-titulo">O que falam de mim</h2>
+        
+        <div class="depoimento-card">
+            <p class="depoimento-texto" id="depoimento-texto">"Jheniffer demonstra alto potencial, destacando-se pelo comprometimento com seus projetos e por buscar ativamente soluções para os desafios, sempre compreendendo o impacto de suas ações no todo. Destaco sua inteligência emocional e maturidade para lidar com diferentes cenários. Constrói relações de confiança e mantém uma postura equilibrada, mesmo sob pressão, sendo uma excelente adição para qualquer equipe."</p>
+            
+            <div class="depoimento-autor">
+                <h4 id="depoimento-nome">Sandro Latenek</h4>
+                <span id="depoimento-cargo">Gerente SCPE LATAM na Renault do Brasil</span>
+            </div>
+        </div>
+    </section>
+    <!-- Bibliotecas e Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

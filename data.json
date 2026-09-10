@@ -1,0 +1,374 @@
+{
+  "pt": {
+    "header": {
+      "idiomas": ["PT", "EN", "FR", "ES"],
+      "botao_pdf": "GERAR PDF"
+    },
+    "hero": {
+      "citacao": "\"Juntar-se é um começo; manter-se unido é progresso; trabalhar junto é sucesso.\" — Henry Ford",
+      "subtitulo": "e eu estou ansiosa para fazer sucesso com vocês :)"
+    },
+    "timeline": {
+      "titulo": "Locais em que pude colaborar",
+      "experiencias": [
+        {
+          "id": "boticario",
+          "empresa": "Grupo Boticário",
+          "tempo": "1a 3m",
+          "descricao": "Atuação na governança financeira (Capex/Opex) de projetos de expansão fabril e logística. Desenvolvimento de dashboards e otimização de KPIs de engenharia para garantir a confiabilidade de dados e apoiar a tomada de decisões."
+        },
+        {
+          "id": "ufpr_ic",
+          "empresa": "UFPR (Iniciação Científica)",
+          "tempo": "1a 1m",
+          "descricao": "Pesquisa acadêmica focada na aplicação de Inteligência Artificial nas etapas do ciclo BPM. Trabalho contínuo com otimização de processos, seleção de artigos e modelagem de negócios."
+        },
+        {
+          "id": "renault",
+          "empresa": "Renault do Brasil",
+          "tempo": "2a 1m",
+          "descricao": "Liderança técnica na implantação do programa de Manufatura Digital 4.0 (GOPRO, APS). Atuação direta no gemba para suporte de sistemas corporativos, padronização de processos e treinamento técnico."
+        },
+        {
+          "id": "hype",
+          "empresa": "Hype Empreendimentos",
+          "tempo": "1a 6m",
+          "descricao": "Gestão administrativa de obras e controle rigoroso de qualidade em construções. Auditoria de procedimentos de controladoria para garantir eficiência e conformidade técnica no canteiro de obras."
+        }
+      ]
+    },
+    "sobre": {
+      "titulo": "Sobre mim",
+      "paragrafos": [
+        "Sou estudante de Engenharia de Produção com uma base técnica em Eletrônica. Minha atuação profissional é focada em conectar as operações de chão de fábrica à estratégia corporativa, unindo otimização de processos com a transformação digital.",
+        "Nos últimos anos, construí minha trajetória atuando em operações de indústrias de alta complexidade. Do setor automotivo em supply ao setor de beleza em governança de engenharia, atuando no suporte à tomada de decisão estratégica.",
+        "Gosto de combinar o entendimento técnico prático com metodologias de melhoria contínua. Fora do ambiente corporativo, atuo como ritmista na Bateria C7 e exploro edição audiovisual e design para exercitar um pensamento lógico mais inovador."
+      ]
+    },
+    "educacao": {
+      "titulo": "Locais onde aprendi",
+      "instituicoes": [
+        {
+          "id": "ifpr",
+          "titulo": "IFPR",
+          "subtitulo": "Técnico em Eletrônica",
+          "descricao": "A base técnica que estruturou meu pensamento lógico e analítico, conectando o entendimento de hardware e sistemas à resolução prática de problemas."
+        },
+        {
+          "id": "ufpr",
+          "titulo": "UFPR",
+          "subtitulo": "Engenharia de Produção",
+          "descricao": "Foco em otimização de processos, integração tecnológica e visão sistêmica. Expansão do aprendizado por meio de pesquisa em Inteligência Artificial e forte engajamento em eventos comunitários estudantis."
+        }
+      ]
+    },
+    "certificacoes": {
+      "titulo": "Certificações",
+      "lista": [
+        {
+          "nome": "Francês",
+          "instituicao": "UTFPR"
+        },
+        {
+          "nome": "Gestão do tempo e organização",
+          "instituicao": "Escola Conquer"
+        },
+        {
+          "nome": "Comunicação e Oratória",
+          "instituicao": "Escola Conquer"
+        }
+      ]
+    },
+    "habilidades": {
+      "titulo": "Habilidades",
+      "soft_skills": ["Comunicação Assertiva", "Inteligência Emocional", "Resolução de Problemas", "Visão Sistêmica"],
+      "idiomas": ["Português (Nativo)", "Inglês (B2)", "Espanhol (A2)", "Francês (A1)"],
+      "hard_skills": ["Looker Studio", "Ecossistema Google (Colab, Apps Script)", "Symphony (APS, GOPRO)", "Notion", "DaVinci Resolve", "Affinity"]
+    },
+    "depoimento": {
+      "titulo": "O que falam de mim",
+      "texto": "Jheniffer demonstra alto potencial, destacando-se pelo comprometimento com seus projetos e por buscar ativamente soluções para os desafios, sempre compreendendo o impacto de suas ações no todo. Destaco sua inteligência emocional e maturidade para lidar com diferentes cenários. Constrói relações de confiança e mantém uma postura equilibrada, mesmo sob pressão, sendo uma excelente adição para qualquer equipe.",
+      "autor": "Sandro Latenek",
+      "empresa": "Gerente SCPE LATAM na Renault do Brasil"
+    }
+  },
+  "en": {
+    "header": {
+      "idiomas": ["PT", "EN", "FR", "ES"],
+      "botao_pdf": "GENERATE PDF"
+    },
+    "hero": {
+      "citacao": "\"Coming together is a beginning; keeping together is progress; working together is success.\" — Henry Ford",
+      "subtitulo": "and I am eager to achieve success with you :)"
+    },
+    "timeline": {
+      "titulo": "Where I've Collaborated",
+      "experiencias": [
+        {
+          "id": "boticario",
+          "empresa": "Grupo Boticário",
+          "tempo": "1y 3m",
+          "descricao": "Financial governance (Capex/Opex) for factory expansion and logistics projects. Developed dashboards and optimized engineering KPIs to ensure data reliability and support strategic decision-making."
+        },
+        {
+          "id": "ufpr_ic",
+          "empresa": "UFPR (Academic Research)",
+          "tempo": "1y 1m",
+          "descricao": "Academic research focused on applying Artificial Intelligence within the Business Process Management (BPM) cycle. Worked on process optimization, literature review, and business modeling."
+        },
+        {
+          "id": "renault",
+          "empresa": "Renault do Brasil",
+          "tempo": "2y 1m",
+          "descricao": "Technical leadership in deploying the Digital Manufacturing 4.0 program (GOPRO, APS). Acted directly on the gemba to provide corporate system support, standardize processes, and conduct technical training."
+        },
+        {
+          "id": "hype",
+          "empresa": "Hype Empreendimentos",
+          "tempo": "1y 6m",
+          "descricao": "Administrative management of construction sites and strict quality control. Audited controllership procedures to ensure efficiency and technical compliance on site."
+        }
+      ]
+    },
+    "sobre": {
+      "titulo": "About Me",
+      "paragrafos": [
+        "I am an Industrial Engineering student with a technical background in Electronics. My professional focus is on connecting shop floor operations to corporate strategy, uniting process optimization with digital transformation.",
+        "In recent years, I have built my career working in highly complex industrial operations. From the automotive sector in supply chain to the beauty sector in engineering governance, acting in support of strategic decision-making.",
+        "I like to combine practical technical understanding with continuous improvement methodologies. Outside the corporate environment, I play tamborim in Bateria C7 and explore audiovisual editing and design to exercise a more innovative logical thinking."
+      ]
+    },
+    "educacao": {
+      "titulo": "Where I Learned",
+      "instituicoes": [
+        {
+          "id": "ifpr",
+          "titulo": "IFPR",
+          "subtitulo": "Electronics Technician",
+          "descricao": "The technical foundation that structured my logical and analytical thinking, bridging the understanding of hardware and systems with practical problem-solving."
+        },
+        {
+          "id": "ufpr",
+          "titulo": "UFPR",
+          "subtitulo": "Industrial Engineering",
+          "descricao": "Focused on process optimization, technological integration, and systemic thinking. Expanded learning through Artificial Intelligence research and active engagement in student community events."
+        }
+      ]
+    },
+    "certificacoes": {
+      "titulo": "Certifications",
+      "lista": [
+        {
+          "nome": "French",
+          "instituicao": "UTFPR"
+        },
+        {
+          "nome": "Time Management and Organization",
+          "instituicao": "Escola Conquer"
+        },
+        {
+          "nome": "Communication and Public Speaking",
+          "instituicao": "Escola Conquer"
+        }
+      ]
+    },
+    "habilidades": {
+      "titulo": "Skills",
+      "soft_skills": ["Assertive Communication", "Emotional Intelligence", "Problem Solving", "Systemic Thinking"],
+      "idiomas": ["Portuguese (Native)", "English (B2)", "Spanish (A2)", "French (A1)"],
+      "hard_skills": ["Looker Studio", "Google Ecosystem (Colab, Apps Script)", "Symphony (APS, GOPRO)", "Notion", "DaVinci Resolve", "Affinity"]
+    },
+    "depoimento": {
+      "titulo": "What They Say About Me",
+      "texto": "Jheniffer demonstrates high potential, standing out for her commitment to projects and proactive approach to problem-solving, always understanding the broader impact of her actions. I highlight her emotional intelligence and maturity in handling diverse scenarios. She builds trusting relationships and maintains a balanced demeanor, even under pressure, making her an excellent addition to any team.",
+      "autor": "Sandro Latenek",
+      "empresa": "SCPE LATAM Manager at Renault do Brasil"
+    }
+  },
+  "fr": {
+    "header": {
+      "idiomas": ["PT", "EN", "FR", "ES"],
+      "botao_pdf": "GÉNÉRER PDF"
+    },
+    "hero": {
+      "citacao": "\"Se réunir est un début ; rester ensemble est un progrès ; travailler ensemble est la réussite.\" — Henry Ford",
+      "subtitulo": "et j'ai hâte de réussir avec vous :)"
+    },
+    "timeline": {
+      "titulo": "Où j'ai collaboré",
+      "experiencias": [
+        {
+          "id": "boticario",
+          "empresa": "Grupo Boticário",
+          "tempo": "1a 3m",
+          "descricao": "Gouvernance financière (Capex/Opex) pour des projets d'expansion d'usines et de logistique. Développement de tableaux de bord et optimisation des KPI d'ingénierie pour soutenir les décisions stratégiques."
+        },
+        {
+          "id": "ufpr_ic",
+          "empresa": "UFPR (Recherche)",
+          "tempo": "1a 1m",
+          "descricao": "Recherche académique axée sur l'application de l'Intelligence Artificielle dans les étapes du cycle BPM. Travail sur l'optimisation des processus et la modélisation d'entreprise."
+        },
+        {
+          "id": "renault",
+          "empresa": "Renault do Brasil",
+          "tempo": "2a 1m",
+          "descricao": "Leadership technique dans le déploiement du programme de Fabrication Digitale 4.0 (GOPRO, APS). Intervention directe sur le gemba pour le support des systèmes d'entreprise et la formation technique."
+        },
+        {
+          "id": "hype",
+          "empresa": "Hype Empreendimentos",
+          "tempo": "1a 6m",
+          "descricao": "Gestion administrative des chantiers et contrôle qualité rigoureux. Audit des procédures de contrôle de gestion pour assurer l'efficacité et la conformité technique."
+        }
+      ]
+    },
+    "sobre": {
+      "titulo": "À propos de moi",
+      "paragrafos": [
+        "Je suis étudiante en Génie Industriel avec une formation technique en Électronique. Mon objectif professionnel est de connecter les opérations de l'atelier à la stratégie d'entreprise, en alliant l'optimisation des processus à la transformation numérique.",
+        "Ces dernières années, j'ai construit mon parcours en travaillant dans des opérations industrielles très complexes. Du secteur automobile dans la chaîne d'approvisionnement au secteur de la beauté dans la gouvernance de l'ingénierie, en agissant en soutien à la prise de décision stratégique.",
+        "J'aime combiner la compréhension technique pratique avec les méthodologies d'amélioration continue. En dehors de l'environnement d'entreprise, je suis percussionniste (tamborim) dans la Bateria C7 et j'explore le montage audiovisuel et le design pour exercer une pensée logique plus innovante."
+      ]
+    },
+    "educacao": {
+      "titulo": "Où j'ai appris",
+      "instituicoes": [
+        {
+          "id": "ifpr",
+          "titulo": "IFPR",
+          "subtitulo": "Technicienne en Électronique",
+          "descricao": "La base technique qui a structuré ma pensée logique et analytique, reliant la compréhension du matériel et des systèmes à la résolution pratique de problèmes."
+        },
+        {
+          "id": "ufpr",
+          "titulo": "UFPR",
+          "subtitulo": "Génie Industriel",
+          "descricao": "Axé sur l'optimisation des processus, l'intégration technologique et la vision systémique. Élargissement de l'apprentissage par la recherche en Intelligence Artificielle et un engagement actif."
+        }
+      ]
+    },
+    "certificacoes": {
+      "titulo": "Certifications",
+      "lista": [
+        {
+          "nome": "Français",
+          "instituicao": "UTFPR"
+        },
+        {
+          "nome": "Gestion du Temps et Organisation",
+          "instituicao": "Escola Conquer"
+        },
+        {
+          "nome": "Communication",
+          "instituicao": "Escola Conquer"
+        }
+      ]
+    },
+    "habilidades": {
+      "titulo": "Compétences",
+      "soft_skills": ["Communication Assertive", "Intelligence Émotionnelle", "Résolution de Problèmes", "Pensée Systémique"],
+      "idiomas": ["Portugais (Natif)", "Anglais (B2)", "Espagnol (A2)", "Français (A1)"],
+      "hard_skills": ["Looker Studio", "Écosystème Google (Colab, Apps Script)", "Symphony (APS, GOPRO)", "Notion", "DaVinci Resolve", "Affinity"]
+    },
+    "depoimento": {
+      "titulo": "Ce qu'on dit de moi",
+      "texto": "Jheniffer fait preuve d'un fort potentiel, se distinguant par son engagement dans ses projets et sa recherche active de solutions face aux défis, tout en comprenant toujours l'impact global de ses actions. Je souligne son intelligence émotionnelle et sa maturité pour gérer différents scénarios. Elle construit des relations de confiance et conserve une attitude équilibrée, même sous pression.",
+      "autor": "Sandro Latenek",
+      "empresa": "Manager SCPE LATAM chez Renault do Brasil"
+    }
+  },
+  "es": {
+    "header": {
+      "idiomas": ["PT", "EN", "FR", "ES"],
+      "botao_pdf": "GENERAR PDF"
+    },
+    "hero": {
+      "citacao": "\"Juntarse es un comienzo; mantenerse juntos es progreso; trabajar juntos es el éxito.\" — Henry Ford",
+      "subtitulo": "y estoy ansiosa por alcanzar el éxito con ustedes :)"
+    },
+    "timeline": {
+      "titulo": "Lugares donde colaboré",
+      "experiencias": [
+        {
+          "id": "boticario",
+          "empresa": "Grupo Boticário",
+          "tempo": "1a 3m",
+          "descricao": "Gobernanza financiera (Capex/Opex) de proyectos de expansión de fábricas y logística. Desarrollo de dashboards y optimización de KPIs de ingeniería para apoyar la toma de decisiones estratégicas."
+        },
+        {
+          "id": "ufpr_ic",
+          "empresa": "UFPR (Investigación)",
+          "tempo": "1a 1m",
+          "descricao": "Investigación académica centrada en la aplicación de Inteligencia Artificial en las etapas del ciclo BPM. Trabajo en optimización de procesos y modelado de negocios."
+        },
+        {
+          "id": "renault",
+          "empresa": "Renault do Brasil",
+          "tempo": "2a 1m",
+          "descricao": "Liderazgo técnico en la implementación del programa de Manufactura Digital 4.0 (GOPRO, APS). Actuación directa en el gemba para soporte de sistemas corporativos y capacitación técnica."
+        },
+        {
+          "id": "hype",
+          "empresa": "Hype Empreendimentos",
+          "tempo": "1a 6m",
+          "descricao": "Gestión administrativa de obras y riguroso control de calidad en construcciones. Auditoría de procedimientos de control para garantizar la eficiencia y el cumplimiento técnico."
+        }
+      ]
+    },
+    "sobre": {
+      "titulo": "Sobre mí",
+      "paragrafos": [
+        "Soy estudiante de Ingeniería de Producción con una base técnica en Electrónica. Mi enfoque profesional es conectar las operaciones de planta con la estrategia corporativa, uniendo la optimización de procesos con la transformación digital.",
+        "En los últimos años, he construido mi trayectoria trabajando en operaciones industriales de alta complejidad. Desde el sector automotriz en supply chain hasta el sector de belleza en gobernanza de ingeniería, actuando en apoyo a la toma de decisiones estratégicas.",
+        "Me gusta combinar la comprensión técnica práctica con metodologías de mejora continua. Fuera del entorno corporativo, soy percusionista (tamborim) en la Bateria C7 y exploro la edición audiovisual y el diseño para ejercitar un pensamiento lógico más innovador."
+      ]
+    },
+    "educacao": {
+      "titulo": "Dónde aprendí",
+      "instituicoes": [
+        {
+          "id": "ifpr",
+          "titulo": "IFPR",
+          "subtitulo": "Técnico en Electrónica",
+          "descricao": "La base técnica que estructuró mi pensamiento lógico y analítico, conectando la comprensión de hardware y sistemas con la resolución práctica de problemas."
+        },
+        {
+          "id": "ufpr",
+          "titulo": "UFPR",
+          "subtitulo": "Ingeniería de Producción",
+          "descricao": "Enfoque en la optimización de procesos, integración tecnológica y visión sistémica. Expansión del aprendizaje a través de la investigación en Inteligencia Artificial."
+        }
+      ]
+    },
+    "certificacoes": {
+      "titulo": "Certificaciones",
+      "lista": [
+        {
+          "nome": "Francés",
+          "instituicao": "UTFPR"
+        },
+        {
+          "nome": "Gestión del Tiempo",
+          "instituicao": "Escola Conquer"
+        },
+        {
+          "nome": "Comunicación y Oratoria",
+          "instituicao": "Escola Conquer"
+        }
+      ]
+    },
+    "habilidades": {
+      "titulo": "Habilidades",
+      "soft_skills": ["Comunicación Asertiva", "Inteligencia Emocional", "Resolución de Problemas", "Visión Sistémica"],
+      "idiomas": ["Portugués (Nativo)", "Inglés (B2)", "Español (A2)", "Francés (A1)"],
+      "hard_skills": ["Looker Studio", "Ecosistema Google (Colab, Apps Script)", "Symphony (APS, GOPRO)", "Notion", "DaVinci Resolve", "Affinity"]
+    },
+    "depoimento": {
+      "titulo": "Lo que dicen de mí",
+      "texto": "Jheniffer demuestra un alto potencial, destacándose por su compromiso con los proyectos y por buscar activamente soluciones a los desafíos, siempre comprendiendo el impacto global de sus acciones. Destaco su inteligencia emocional y madurez para manejar diferentes escenarios. Construye relaciones de confianza y mantiene una postura equilibrada, incluso bajo presión.",
+      "autor": "Sandro Latenek",
+      "empresa": "Gerente SCPE LATAM en Renault do Brasil"
+    }
+  }
+}
