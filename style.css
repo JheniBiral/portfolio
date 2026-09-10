@@ -407,3 +407,86 @@ section {
     font-size: 14px;
     color: #6B7280;
 }
+/* 12. RESPONSIVIDADE (Ajustes para Celulares) */
+@media (max-width: 768px) {
+    /* Reorganiza o Cabeçalho (Nome no topo, Idiomas, Botão) */
+    .header {
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px 5%;
+        text-align: center;
+    }
+    
+    .nome-logo {
+        order: -1; /* Força o nome a ser o primeiro item */
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    /* Reduz a fonte e empilha a Hero Section */
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    #hero-citacao {
+        font-size: 24px; /* Fonte reduzida para caber sem quebrar sílabas */
+    }
+    
+    #hero-subtitulo {
+        font-size: 16px;
+    }
+    
+    /* Empilha a Linha do Tempo e remove a linha horizontal */
+    .timeline-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    
+    .linha-base {
+        display: none; 
+    }
+    
+    .timeline-item {
+        width: 100%;
+    }
+
+    /* Ajusta o Menu Lateral de Escolas para ficar no topo */
+    .tabs-container {
+        flex-direction: column;
+    }
+    
+    .tabs-menu, .tab-conteudo {
+        width: 100%;
+    }
+    
+    .tabs-menu {
+        flex-direction: row;
+        justify-content: center;
+        padding: 16px 0;
+    }
+    
+    .tab-btn {
+        border-left: none;
+        border-bottom: 4px solid transparent;
+        padding: 12px 24px;
+    }
+    
+    .tab-btn.ativo {
+        border-left: none;
+        border-bottom: 4px solid var(--cor-acento);
+    }
+    
+    /* Espaçamento geral e textos */
+    section {
+        padding: 40px 5%;
+    }
+    
+    .secao-titulo {
+        text-align: center;
+        font-size: 28px;
+    }
+}
