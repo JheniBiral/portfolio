@@ -386,13 +386,15 @@ section {
     transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* O que acontece quando o mouse passa por cima */
-.skill-pilula:hover {
-    color: #F9F8F6; /* Deixa o texto clarinho para dar contraste com o salmão */
+/* O que acontece quando o mouse passa por cima (PC) ou quando é clicado (Mobile) */
+.skill-pilula:hover,
+.skill-pilula.ativo-mobile {
+    color: #F9F8F6;
     border-color: var(--cor-hover);
 }
 
-.skill-pilula:hover::before {
+.skill-pilula:hover::before,
+.skill-pilula.ativo-mobile::before {
     transform: scaleX(1); /* Expande a tinta salmão até o limite da porcentagem */
 }
 

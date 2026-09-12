@@ -84,7 +84,7 @@ function updateContent(lang) {
     document.getElementById('footer-titulo').innerText = data.footer_titulo;
 }
 
-// Injeta as pílulas de habilidades dinamicamente com porcentagem
+/// Injeta as pílulas de habilidades dinamicamente com porcentagem e evento de clique
 function populateSkills(containerId, skillsArray) {
     const container = document.getElementById(containerId);
     container.innerHTML = '';
@@ -93,13 +93,16 @@ function populateSkills(containerId, skillsArray) {
         const div = document.createElement('div');
         div.className = 'skill-pilula';
         
-        // Verifica se a habilidade está no novo formato (objeto com porcentagem)
         const skillName = typeof skill === 'object' ? skill.nome : skill;
         const skillProgress = typeof skill === 'object' ? skill.progresso : '0%';
         
         div.innerText = skillName;
-        // Injeta a porcentagem como uma variável CSS invisível direto no HTML
         div.style.setProperty('--progresso', skillProgress);
+        
+        // Permite que o toque no celular trave a pílula preenchida
+        div.addEventListener('click', () => {
+            div.classList.toggle('ativo-mobile');
+        });
         
         container.appendChild(div);
     });
