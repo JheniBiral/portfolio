@@ -203,19 +203,20 @@ section {
 
 /* 7. SOBRE MIM */
 .sobre-conteudo {
-    max-width: 800px;
+    max-width: 900px;
     width: 100%;
-    background-color: var(--cor-branco);
-    padding: 40px 48px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    background-color: transparent; /* Remove o fundo branco */
+    box-shadow: none; /* Remove a sombra */
+    padding: 0;
+    text-align: center; /* Centraliza o texto */
 }
 
 .sobre-conteudo p {
-    font-family: var(--fonte-textos);
-    font-size: 16px;
+    font-family: var(--fonte-titulos); /* Aplica a fonte Lora */
+    font-size: 18px; /* Texto ligeiramente maior */
     line-height: 1.8;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
+    color: var(--cor-texto);
 }
 
 .sobre-conteudo p:last-child {
