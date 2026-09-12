@@ -424,11 +424,64 @@ section {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Padroniza o tamanho de qualquer SVG do Affinity e herda a cor */
+/* Padroniza o tamanho de qualquer SVG e corrige o preenchimento */
 .redes-sociais svg, .redes-sociais-footer svg {
     width: 28px;
     height: 28px;
-    fill: currentColor; 
+    fill: none; /* Isso conserta o quadrado sólido do email */
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Efeito Salmão ao passar o mouse */
+.redes-sociais a:hover, .redes-sociais-footer a:hover {
+    color: var(--cor-hover);
+    transform: translateY(-2px);
+}
+
+/* Balãozinho de "Clique para copiar" */
+.copy-email {
+    position: relative;
+    cursor: pointer;
+}
+
+.copy-email .tooltip {
+    visibility: hidden;
+    background-color: var(--cor-texto);
+    color: #F9F8F6;
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px 12px;
+    position: absolute;
+    z-index: 10;
+    bottom: 140%; /* Posiciona acima do ícone */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 12px;
+    white-space: nowrap;
+    font-family: var(--fonte-textos);
+    pointer-events: none; /* Impede que o balão roube o clique do mouse */
+}
+
+/* Setinha do balão */
+.copy-email .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--cor-texto) transparent transparent transparent;
+}
+
+.copy-email:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
 }
 
 /* Efeito Salmão ao passar o mouse */
