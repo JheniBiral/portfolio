@@ -81,9 +81,28 @@
     },
     "habilidades": {
       "titulo": "Habilidades",
-      "soft_skills": ["Comunicação Assertiva", "Inteligência Emocional", "Resolução de Problemas", "Visão Sistêmica"],
-      "idiomas": ["Português (Nativo)", "Inglês (B2)", "Espanhol (A2)", "Francês (A1)"],
-      "hard_skills": ["Looker Studio", "Ecossistema Google (Colab, Apps Script)", "Symphony (APS, GOPRO)", "Notion", "DaVinci Resolve", "Affinity"]
+      "soft_skills": [
+        { "nome": "Comunicação Assertiva", "progresso": "95%" },
+        { "nome": "Inteligência Emocional", "progresso": "95%" },
+        { "nome": "Resolução de Problemas", "progresso": "85%" },
+        { "nome": "Visão Estratégica", "progresso": "70%" },
+        { "nome": "Mentalidade de Melhoria Contínua", "progresso": "99%" },
+        { "nome": "Filosofia Lean Manufacturing", "progresso": "99%" }
+      ],
+      "idiomas": [
+        { "nome": "Português (Nativo)", "progresso": "100%" },
+        { "nome": "Inglês (C1)", "progresso": "90%" },
+        { "nome": "Espanhol (B1)", "progresso": "60%" },
+        { "nome": "Francês (B1)", "progresso": "60%" }
+      ],
+      "hard_skills": [
+        { "nome": "Looker Studio", "progresso": "40%" },
+        { "nome": "Ecossistema Google (Colab, Gemini, Docs...)", "progresso": "70%" },
+        { "nome": "Symphony (APS, GOPRO)", "progresso": "65%" },
+        { "nome": "Notion", "progresso": "50%" },
+        { "nome": "Bizagi", "progresso": "75%" },
+        { "nome": "BPMN.io", "progresso": "75%" }
+      ]
     },
     "depoimento": {
       "titulo": "O que falam de mim",
@@ -175,9 +194,28 @@
     },
     "habilidades": {
       "titulo": "Skills",
-      "soft_skills": ["Assertive Communication", "Emotional Intelligence", "Problem Solving", "Systemic Thinking"],
-      "idiomas": ["Portuguese (Native)", "English (B2)", "Spanish (A2)", "French (A1)"],
-      "hard_skills": ["Looker Studio", "Google Ecosystem (Colab, Apps Script)", "Symphony (APS, GOPRO)", "Notion", "DaVinci Resolve", "Affinity"]
+      "soft_skills": [
+        { "nome": "Assertive Communication", "progresso": "95%" },
+        { "nome": "Emotional Intelligence", "progresso": "95%" },
+        { "nome": "Problem Solving", "progresso": "85%" },
+        { "nome": "Strategic Vision", "progresso": "70%" },
+        { "nome": "Continuous Improvement Mindset", "progresso": "99%" },
+        { "nome": "Lean Manufacturing Philosophy", "progresso": "99%" }
+      ],
+      "idiomas": [
+        { "nome": "Portuguese (Native)", "progresso": "100%" },
+        { "nome": "English (C2)", "progresso": "85%" },
+        { "nome": "Spanish (B1)", "progresso": "60%" },
+        { "nome": "French (B1)", "progresso": "60%" }
+      ],
+      "hard_skills": [
+        { "nome": "Looker Studio", "progresso": "40%" },
+        { "nome": "Google Ecosystem (Colab, Gemini, Docs...)", "progresso": "70%" },
+        { "nome": "Symphony (APS, GOPRO)", "progresso": "65%" },
+        { "nome": "Notion", "progresso": "50%" },
+        { "nome": "Bizagi", "progresso": "75%" },
+        { "nome": "BPMN.io", "progresso": "75%" }
+      ]
     },
     "depoimento": {
       "titulo": "What They Say About Me",
@@ -269,9 +307,28 @@
     },
     "habilidades": {
       "titulo": "Compétences",
-      "soft_skills": ["Communication Assertive", "Intelligence Émotionnelle", "Résolution de Problèmes", "Pensée Systémique"],
-      "idiomas": ["Portugais (Natif)", "Anglais (B2)", "Espagnol (A2)", "Français (A1)"],
-      "hard_skills": ["Looker Studio", "Écosystème Google (Colab, Apps Script)", "Symphony (APS, GOPRO)", "Notion", "DaVinci Resolve", "Affinity"]
+      "soft_skills": [
+        { "nome": "Communication Assertive", "progresso": "95%" },
+        { "nome": "Intelligence Émotionnelle", "progresso": "95%" },
+        { "nome": "Résolution de Problèmes", "progresso": "85%" },
+        { "nome": "Vision Stratégique", "progresso": "70%" },
+        { "nome": "Esprit d'Amélioration Continue", "progresso": "99%" },
+        { "nome": "Philosophie Lean Manufacturing", "progresso": "99%" }
+      ],
+      "idiomas": [
+        { "nome": "Portugais (Natif)", "progresso": "100%" },
+        { "nome": "Anglais (C2)", "progresso": "85%" },
+        { "nome": "Espagnol (B1)", "progresso": "60%" },
+        { "nome": "Français (B1)", "progresso": "60%" }
+      ],
+      "hard_skills": [
+        { "nome": "Looker Studio", "progresso": "40%" },
+        { "nome": "Écosystème Google (Colab, Gemini, Docs...)", "progresso": "70%" },
+        { "nome": "Symphony (APS, GOPRO)", "progresso": "65%" },
+        { "nome": "Notion", "progresso": "50%" },
+        { "nome": "Bizagi", "progresso": "75%" },
+        { "nome": "BPMN.io", "progresso": "75%" }
+      ]
     },
     "depoimento": {
       "titulo": "Ce qu'on dit de moi",
@@ -363,9 +420,28 @@
     },
     "habilidades": {
       "titulo": "Habilidades",
-      "soft_skills": ["Comunicación Asertiva", "Inteligencia Emocional", "Resolución de Problemas", "Visión Sistémica"],
-      "idiomas": ["Portugués (Nativo)", "Inglés (B2)", "Español (A2)", "Francés (A1)"],
-      "hard_skills": ["Looker Studio", "Ecosistema Google (Colab, Apps Script)", "Symphony (APS, GOPRO)", "Notion", "DaVinci Resolve", "Affinity"]
+      "soft_skills": [
+        { "nome": "Comunicación Asertiva", "progresso": "95%" },
+        { "nome": "Inteligencia Emocional", "progresso": "95%" },
+        { "nome": "Resolución de Problemas", "progresso": "85%" },
+        { "nome": "Visión Estratégica", "progresso": "70%" },
+        { "nome": "Mentalidad de Mejora Continua", "progresso": "99%" },
+        { "nome": "Filosofía Lean Manufacturing", "progresso": "99%" }
+      ],
+      "idiomas": [
+        { "nome": "Portugués (Nativo)", "progresso": "100%" },
+        { "nome": "Inglés (C2)", "progresso": "85%" },
+        { "nome": "Español (B1)", "progresso": "60%" },
+        { "nome": "Francés (B1)", "progresso": "60%" }
+      ],
+      "hard_skills": [
+        { "nome": "Looker Studio", "progresso": "40%" },
+        { "nome": "Ecosistema Google (Colab, Gemini, Docs...)", "progresso": "70%" },
+        { "nome": "Symphony (APS, GOPRO)", "progresso": "65%" },
+        { "nome": "Notion", "progresso": "50%" },
+        { "nome": "Bizagi", "progresso": "75%" },
+        { "nome": "BPMN.io", "progresso": "75%" }
+      ]
     },
     "depoimento": {
       "titulo": "Lo que dicen de mí",

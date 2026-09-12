@@ -356,24 +356,46 @@ section {
     align-items: center;
 }
 
+/* Atualização das Pílulas de Habilidades (Efeito de Preenchimento) */
 .skill-pilula {
-    background-color: var(--cor-branco);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
     border: 1px solid var(--cor-acento);
-    padding: 10px 16px;
-    border-radius: 50px;
-    font-family: var(--fonte-textos);
+    color: var(--cor-acento);
+    padding: 8px 16px;
+    border-radius: 20px;
     font-size: 14px;
-    color: var(--cor-texto);
-    transition: all 0.3s ease;
+    font-weight: 600;
     cursor: default;
-    width: 100%;
-    max-width: 260px; /* Mantém as larguras uniformes */
+    transition: color 0.4s ease, border-color 0.4s ease;
 }
 
-.skill-pilula:hover {
-    background-color: var(--cor-acento);
-    color: var(--cor-branco);
+/* A "tinta" salmão escondida no fundo da pílula */
+.skill-pilula::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: var(--progresso); /* Lê a porcentagem injetada pelo JavaScript */
+    background-color: var(--cor-hover); /* Sua cor salmão */
+    z-index: -1;
+    transform: scaleX(0); /* Começa com tamanho zero */
+    transform-origin: left; /* A animação cresce da esquerda para a direita */
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
+
+/* O que acontece quando o mouse passa por cima */
+.skill-pilula:hover {
+    color: #F9F8F6; /* Deixa o texto clarinho para dar contraste com o salmão */
+    border-color: var(--cor-hover);
+}
+
+.skill-pilula:hover::before {
+    transform: scaleX(1); /* Expande a tinta salmão até o limite da porcentagem */
+}
+
 /* 11. DEPOIMENTO (Cartão) */
 .depoimento-card {
     background-color: var(--cor-branco);
