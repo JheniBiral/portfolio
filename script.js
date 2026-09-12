@@ -78,6 +78,9 @@ function updateContent(lang) {
     document.getElementById('depoimento-texto').innerText = `"${data.depoimento.texto}"`;
     document.getElementById('depoimento-nome').innerText = data.depoimento.autor;
     document.getElementById('depoimento-cargo').innerText = data.depoimento.empresa;
+
+    // Footer
+    document.getElementById('footer-titulo').innerText = data.footer_titulo;
 }
 
 // Injeta as pílulas de habilidades dinamicamente
