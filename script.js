@@ -6,7 +6,6 @@ let currentTabId = 'ifpr';
 // 1. INICIALIZAÇÃO: Busca o JSON quando a página carrega
 document.addEventListener('DOMContentLoaded', () => {
     fetch('data.json')
-        .then(response => response.json())
         .then(data => {
             portfolioData = data;
             updateContent(currentLang);
@@ -14,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setupTimelineInteractions();
             setupTabsInteractions();
             setupPDFGeneration();
+            setupEmailCopy(); // Nova função adicionada aqui
         })
         .catch(error => console.error("Erro ao carregar os dados:", error));
 });
@@ -154,5 +154,26 @@ function setupPDFGeneration() {
             jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
         };
         html2pdf().set(opt).from(element).save();
+    });
+}
+// 7. EVENTOS DE CLIQUE: Copiar Email
+function setupEmailCopy() {
+    const emailBtns = document.querySelectorAll('.copy-email');
+    
+    emailBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const email = btn.getAttribute('data-email');
+            
+            // API do navegador para copiar texto
+            navigator.clipboard.writeText(email).then(() => {
+                const tooltip = btn.querySelector('.tooltip');
+                tooltip.innerText = "Copiado para área de transferência!";
+                
+                // Retorna ao texto original após 2.5 segundos
+                setTimeout(() => {
+                    tooltip.innerText = "Clique para copiar";
+                }, 2500);
+            });
+        });
     });
 }
