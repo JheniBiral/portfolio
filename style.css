@@ -409,7 +409,7 @@ section {
     font-size: 14px;
     color: #6B7280;
 }
-/* Ícones Sociais (Header) */
+/* Ícones Sociais e SVGs */
 .redes-sociais {
     display: flex;
     gap: 16px;
@@ -417,9 +417,24 @@ section {
 }
 
 .redes-sociais a, .redes-sociais-footer a {
-    color: var(--cor-acento);
-    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none; /* Remove o sublinhado estranho */
+    color: var(--cor-acento); /* Aplica o seu Azul Aço */
     display: flex;
+    align-items: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Padroniza o tamanho de qualquer SVG do Affinity e herda a cor */
+.redes-sociais svg, .redes-sociais-footer svg {
+    width: 28px;
+    height: 28px;
+    fill: currentColor; 
+}
+
+/* Efeito Salmão ao passar o mouse */
+.redes-sociais a:hover, .redes-sociais-footer a:hover {
+    color: var(--cor-hover);
+    transform: translateY(-2px);
 }
 
 .redes-sociais a:hover, .redes-sociais-footer a:hover {
