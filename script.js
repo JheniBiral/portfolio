@@ -6,6 +6,7 @@ let currentTabId = 'ifpr';
 // 1. INICIALIZAÇÃO: Busca o JSON quando a página carrega
 document.addEventListener('DOMContentLoaded', () => {
     fetch('data.json')
+        .then(response => response.json()) // <-- ESTA É A LINHA QUE HAVIA SUMIDO!
         .then(data => {
             portfolioData = data;
             updateContent(currentLang);
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setupTimelineInteractions();
             setupTabsInteractions();
             setupPDFGeneration();
-            setupEmailCopy(); // Nova função adicionada aqui
+            setupEmailCopy();
         })
         .catch(error => console.error("Erro ao carregar os dados:", error));
 });
