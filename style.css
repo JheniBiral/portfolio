@@ -461,6 +461,45 @@ section {
     cursor: grabbing;
 }
 
+/* Embrulho do carrossel e Setas de Navegação */
+.carrossel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.btn-seta {
+    background-color: #FFFFFF;
+    border: 1px solid var(--cor-linha);
+    color: var(--cor-acento);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute; /* Deixa as setas flutuando */
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+.btn-seta:hover {
+    background-color: var(--cor-hover); /* Seu salmão no hover */
+    color: white;
+    border-color: var(--cor-hover);
+}
+
+.btn-prev { left: -20px; } /* Puxa um pouquinho para fora à esquerda */
+.btn-next { right: -20px; } /* Puxa um pouquinho para fora à direita */
+
+/* No celular, o usuário desliza com o dedo, então podemos esconder as setas */
+@media (max-width: 768px) {
+    .btn-seta { display: none; }
+}
+
 /* Ícones Sociais e SVGs */
 .redes-sociais {
     display: flex;

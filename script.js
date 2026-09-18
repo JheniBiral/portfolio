@@ -203,3 +203,12 @@ function setupEmailCopy() {
         });
     });
 }
+
+// 8. EVENTOS DE CLIQUE: Setas do Carrossel
+function scrollCarrossel(direcao) {
+    const carrossel = document.getElementById('container-depoimentos');
+    const larguraCartao = carrossel.offsetWidth; // Calcula a largura de 1 cartão
+    
+    // Rola para a direita (+1) ou para a esquerda (-1) de forma suave
+    carrossel.scrollBy({ left: larguraCartao * direcao, behavior: 'smooth' });
+}
