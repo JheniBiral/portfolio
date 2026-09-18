@@ -104,12 +104,19 @@
         { "nome": "BPMN.io", "progresso": "75%" }
       ]
     },
-    "depoimento": {
-      "titulo": "O que falam de mim",
-      "texto": "Jheniffer demonstra alto potencial, destacando-se pelo comprometimento com seus projetos e por buscar ativamente soluções para os desafios, sempre compreendendo o impacto de suas ações no todo. Destaco sua inteligência emocional e maturidade para lidar com diferentes cenários. Constrói relações de confiança e mantém uma postura equilibrada, mesmo sob pressão, sendo uma excelente adição para qualquer equipe.",
-      "autor": "Sandro Latenek",
-      "empresa": "Gerente SCPE LATAM na Renault do Brasil"
-    },
+    "titulo_depoimentos": "O que falam de mim",
+    "depoimentos": [
+      {
+        "texto": "Jheniffer demonstra alto potencial, destacando-se pelo comprometimento com seus projetos e por buscar ativamente soluções para os desafios, sempre compreendendo o impacto de suas ações no todo. Destaco sua inteligência emocional e maturidade para lidar com diferentes cenários. Constrói relações de confiança e mantém uma postura equilibrada, mesmo sob pressão, sendo uma excelente adição para qualquer equipe.",
+        "autor": "Sandro Latenek",
+        "empresa": "Gerente SCPE LATAM na Renault do Brasil"
+      },
+      {
+        "texto": "Busca constante aperfeiçoamento, dedicada na execução das tarefas, autonomia adequada, perfil entusiasmado e muito positivo. Apresenta ótima desenvoltura e engajamento junto aos membros do time. Aumentou suas competências e consegue enfrentar os desafios de manutenção e suporte às áreas clientes. Está de parabéns por realmente adquirir os conhecimentos e aplicá-los no físico [chão de fábrica].",
+        "autor": "Marcelo Hernandes",
+        "empresa": "Coordenador de Engenharia e Processos na (Renault Group)"
+      }
+    ],
     "footer_titulo": "Obrigada por se interessar pelo meu trabalho."
   },
   "en": {
@@ -217,12 +224,19 @@
         { "nome": "BPMN.io", "progresso": "75%" }
       ]
     },
-    "depoimento": {
-      "titulo": "What They Say About Me",
-      "texto": "Jheniffer demonstrates high potential, standing out for her commitment to projects and proactive approach to problem-solving, always understanding the broader impact of her actions. I highlight her emotional intelligence and maturity in handling diverse scenarios. She builds trusting relationships and maintains a balanced demeanor, even under pressure, making her an excellent addition to any team.",
-      "autor": "Sandro Latenek",
-      "empresa": "SCPE LATAM Manager at Renault do Brasil"
-    },
+    "titulo_depoimentos": "What people say about me",
+    "depoimentos": [
+      {
+        "texto": "Jheniffer demonstrates high potential, standing out for her commitment to projects and for actively seeking solutions to challenges, always understanding the overall impact of her actions. I highlight her emotional intelligence and maturity in dealing with different scenarios. She builds trusting relationships and maintains a balanced posture, even under pressure, making her an excellent addition to any team.",
+        "autor": "Sandro Latenek",
+        "empresa": "SCPE LATAM Manager at Renault do Brasil"
+      },
+      {
+        "texto": "Constantly seeks improvement, dedicated to executing tasks, shows appropriate autonomy, and has an enthusiastic and highly positive profile. She demonstrates excellent resourcefulness and engagement with team members. She has expanded her skills and successfully tackles maintenance and support challenges for client areas. Congratulations on truly acquiring the knowledge and applying it directly on the shop floor.",
+        "autor": "Marcelo Hernandes",
+        "empresa": "Engineering and Process Coordinator at (Renault Group)"
+      }
+    ],
     "footer_titulo": "Thank you for your interest in my work."
   },
   "fr": {
@@ -330,12 +344,19 @@
         { "nome": "BPMN.io", "progresso": "75%" }
       ]
     },
-    "depoimento": {
-      "titulo": "Ce qu'on dit de moi",
-      "texto": "Jheniffer fait preuve d'un fort potentiel, se distinguant par son engagement dans ses projets et sa recherche active de solutions face aux défis, tout en comprenant toujours l'impact global de ses actions. Je souligne son intelligence émotionnelle et sa maturité pour gérer différents scénarios. Elle construit des relations de confiance et conserve une attitude équilibrée, même sous pression.",
-      "autor": "Sandro Latenek",
-      "empresa": "Manager SCPE LATAM chez Renault do Brasil"
-    },
+    "titulo_depoimentos": "Ce qu'on dit de moi",
+    "depoimentos": [
+      {
+        "texto": "Jheniffer fait preuve d'un fort potentiel, se distinguant par son engagement dans ses projets et sa recherche active de solutions face aux défis, tout en comprenant toujours l'impact global de ses actions. Je souligne son intelligence émotionnelle et sa maturité pour gérer différents scénarios. Elle instaure des relations de confiance et garde une attitude équilibrée, même sous pression, ce qui en fait un excellent atout pour toute équipe.",
+        "autor": "Sandro Latenek",
+        "empresa": "Manager SCPE LATAM chez Renault do Brasil"
+      },
+      {
+        "texto": "En recherche constante d'amélioration, dévouée dans l'exécution de ses tâches, elle fait preuve d'une bonne autonomie, avec un profil enthousiaste et très positif. Elle démontre une excellente aisance et un grand engagement envers les membres de l'équipe. Elle a développé ses compétences et sait relever les défis de maintenance et de support pour les zones clientes. Félicitations pour avoir réellement acquis les connaissances et les avoir appliquées sur le terrain.",
+        "autor": "Marcelo Hernandes",
+        "empresa": "Coordinateur Ingénierie et Processus chez (Renault Group)"
+      }
+    ],
     "footer_titulo": "Merci de l'intérêt que vous portez à mon travail."
   },
   "es": {
@@ -443,12 +464,19 @@
         { "nome": "BPMN.io", "progresso": "75%" }
       ]
     },
-    "depoimento": {
-      "titulo": "Lo que dicen de mí",
-      "texto": "Jheniffer demuestra un alto potencial, destacándose por su compromiso con los proyectos y por buscar activamente soluciones a los desafíos, siempre comprendiendo el impacto global de sus acciones. Destaco su inteligencia emocional y madurez para manejar diferentes escenarios. Construye relaciones de confianza y mantiene una postura equilibrada, incluso bajo presión.",
-      "autor": "Sandro Latenek",
-      "empresa": "Gerente SCPE LATAM en Renault do Brasil"
-    },
+    "titulo_depoimentos": "Lo que dicen de mí",
+    "depoimentos": [
+      {
+        "texto": "Jheniffer demuestra un alto potencial, destacándose por el compromiso con sus proyectos y por buscar activamente soluciones a los desafíos, comprendiendo siempre el impacto de sus acciones en el conjunto. Destaco su inteligencia emocional y madurez para manejar diferentes escenarios. Construye relaciones de confianza y mantiene una postura equilibrada, incluso bajo presión, siendo una excelente incorporación para cualquier equipo.",
+        "autor": "Sandro Latenek",
+        "empresa": "Gerente SCPE LATAM en Renault do Brasil"
+      },
+      {
+        "texto": "Busca el perfeccionamiento constante, dedicada en la ejecución de las tareas, muestra una autonomía adecuada y tiene un perfil entusiasta y muy positivo. Presenta una excelente soltura y compromiso con los miembros del equipo. Aumentó sus competencias y logra enfrentar los desafíos de mantenimiento y soporte a las áreas clientes. Felicitaciones por adquirir realmente los conocimientos y aplicarlos directamente en el terreno.",
+        "autor": "Marcelo Hernandes",
+        "empresa": "Coordinador de Ingeniería y Procesos en (Renault Group)"
+      }
+    ],
     "footer_titulo": "Gracias por interesarse en mi trabajo."
   }
 }

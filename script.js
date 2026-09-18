@@ -74,12 +74,25 @@ function updateContent(lang) {
     populateSkills('container-idiomas', data.habilidades.idiomas);
     populateSkills('container-hard', data.habilidades.hard_skills);
 
-    // Depoimento
-    document.getElementById('depoimento-titulo').innerText = data.depoimento.titulo;
-    document.getElementById('depoimento-texto').innerText = `"${data.depoimento.texto}"`;
-    document.getElementById('depoimento-nome').innerText = data.depoimento.autor;
-    document.getElementById('depoimento-cargo').innerText = data.depoimento.empresa;
-
+    // Depoimentos (Carrossel)
+    document.getElementById('depoimentos-titulo').innerText = data.titulo_depoimentos;
+    
+    const containerDepoimentos = document.getElementById('container-depoimentos');
+    containerDepoimentos.innerHTML = ''; // Limpa os antigos antes de desenhar os novos
+    
+    data.depoimentos.forEach(dep => {
+        const card = document.createElement('div');
+        card.className = 'depoimento-card';
+        card.innerHTML = `
+            <p class="depoimento-texto">"${dep.texto}"</p>
+            <div class="depoimento-autor">
+                <h4>${dep.autor}</h4>
+                <span>${dep.empresa}</span>
+            </div>
+        `;
+        containerDepoimentos.appendChild(card);
+    });
+    
     // Footer
     document.getElementById('footer-titulo').innerText = data.footer_titulo;
 }

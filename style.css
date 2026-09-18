@@ -398,41 +398,39 @@ section {
     transform: scaleX(1); /* Expande a tinta salmão até o limite da porcentagem */
 }
 
-/* 11. DEPOIMENTO (Cartão) */
+/* 10. DEPOIMENTOS (Carrossel Magnético) */
+.depoimentos-carrossel {
+    display: flex;
+    gap: 32px;
+    overflow-x: auto; /* Permite rolar para os lados */
+    scroll-snap-type: x mandatory; /* Ativa o ímã magnético do celular */
+    padding-bottom: 24px;
+    scrollbar-width: none; /* Esconde a barra feia no Firefox */
+}
+
+.depoimentos-carrossel::-webkit-scrollbar {
+    display: none; /* Esconde a barra feia no Chrome/Safari */
+}
+
 .depoimento-card {
-    background-color: var(--cor-branco);
-    padding: 50px 60px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    max-width: 900px;
-    width: 100%;
+    min-width: 100%; /* Faz cada cartão ocupar 100% da largura da tela */
+    scroll-snap-align: center; /* O cartão para sempre centralizado ao arrastar */
+    box-sizing: border-box; /* Evita que o preenchimento interno quebre a largura */
+    
+    /* Mantenha o resto das suas cores e configurações atuais do card abaixo */
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
 }
 
-.depoimento-texto {
-    font-size: 24px;
-    font-style: italic;
-    line-height: 1.6;
-    margin-bottom: 32px;
-    color: #4B5563;
+/* Opcional: Cursor de arrastar para o PC */
+.depoimentos-carrossel:hover {
+    cursor: grab;
+}
+.depoimentos-carrossel:active {
+    cursor: grabbing;
 }
 
-.depoimento-autor {
-    text-align: right;
-    border-top: 1px solid #E5E7EB;
-    padding-top: 24px;
-}
-
-#depoimento-nome {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 4px;
-}
-
-#depoimento-cargo {
-    font-family: var(--fonte-textos);
-    font-size: 14px;
-    color: #6B7280;
-}
 /* Ícones Sociais e SVGs */
 .redes-sociais {
     display: flex;
