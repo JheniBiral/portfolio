@@ -192,11 +192,17 @@
     <section class="depoimento-section">
         <h2 class="secao-titulo" id="depoimentos-titulo">O que falam de mim</h2>
         
-        <div class="depoimentos-carrossel" id="container-depoimentos">
-            <!-- Os cartões serão injetados magicamente aqui pelo JS -->
+        <div class="carrossel-wrapper">
+            <button class="btn-seta btn-prev" aria-label="Anterior" onclick="scrollCarrossel(-1)">&#10094;</button>
+            
+            <div class="depoimentos-carrossel" id="container-depoimentos">
+                <!-- Os cartões serão injetados magicamente aqui pelo JS -->
+            </div>
+            
+            <button class="btn-seta btn-next" aria-label="Próximo" onclick="scrollCarrossel(1)">&#10095;</button>
         </div>
     </section>
-
+    
     <!-- FOOTER -->
     <footer class="site-footer">
         <h2 id="footer-titulo">Obrigada por se interessar pelo meu trabalho.</h2>

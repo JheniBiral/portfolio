@@ -162,9 +162,13 @@
             currentLang = lang;
             const data = cvData[lang];
 
-            // Atualiza botões
-            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('ativo'));
-            event.target.classList.add('ativo');
+            // Atualiza botões (Novo método à prova de falhas)
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('ativo');
+                if (btn.innerText.toLowerCase() === lang) {
+                    btn.classList.add('ativo');
+                }
+            });
             document.getElementById('txt-btn-pdf').innerText = data.btn_pdf;
 
             // Atualiza Títulos
