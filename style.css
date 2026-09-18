@@ -405,25 +405,55 @@ section {
     overflow-x: auto; /* Permite rolar para os lados */
     scroll-snap-type: x mandatory; /* Ativa o ímã magnético do celular */
     padding-bottom: 24px;
-    scrollbar-width: none; /* Esconde a barra feia no Firefox */
+    scrollbar-width: none; /* Esconde a barra no Firefox */
 }
 
 .depoimentos-carrossel::-webkit-scrollbar {
-    display: none; /* Esconde a barra feia no Chrome/Safari */
+    display: none; /* Esconde a barra no Chrome/Safari */
 }
 
+/* O Cartão Visual */
 .depoimento-card {
-    min-width: 100%; /* Faz cada cartão ocupar 100% da largura da tela */
-    scroll-snap-align: center; /* O cartão para sempre centralizado ao arrastar */
-    box-sizing: border-box; /* Evita que o preenchimento interno quebre a largura */
+    min-width: 100%; /* Faz cada cartão ocupar 100% da área */
+    scroll-snap-align: center; /* O cartão para sempre centralizado */
+    box-sizing: border-box; 
     
-    /* Mantenha o resto das suas cores e configurações atuais do card abaixo */
-    background-color: transparent;
-    padding: 0;
+    /* Estética do Cartão */
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Opcional: Cursor de arrastar para o PC */
+.depoimento-texto {
+    font-family: var(--fonte-titulos);
+    font-size: 18px;
+    font-style: italic;
+    color: var(--cor-texto);
+    margin-bottom: 24px;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.depoimento-autor h4 {
+    font-family: var(--fonte-textos);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cor-acento);
+    margin: 0 0 4px 0;
+}
+
+.depoimento-autor span {
+    font-family: var(--fonte-textos);
+    font-size: 14px;
+    color: #666666;
+}
+
+/* Cursor de arrastar para o PC */
 .depoimentos-carrossel:hover {
     cursor: grab;
 }

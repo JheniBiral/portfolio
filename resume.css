@@ -67,10 +67,10 @@ body {
 /* A FOLHA DO CURRÍCULO (A4) */
 .folha-a4 {
     background-color: #FFFFFF;
-    max-width: 210mm; /* Largura exata de um A4 */
-    min-height: 297mm; /* Altura exata de um A4 */
+    max-width: 210mm; 
+    min-height: 297mm; 
     margin: 40px auto;
-    padding: 20mm; /* Margem interna padrão de impressão */
+    padding: 12mm 15mm; /* Recuos reduzidos (12mm em cima/embaixo e 15mm nas laterais) */
     box-sizing: border-box;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
@@ -78,14 +78,14 @@ body {
 /* CABEÇALHO DO CV */
 .cv-header {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 18px; /* Recuo inferior reduzido */
 }
 
 .cv-nome {
     font-family: var(--fonte-titulos);
     font-size: 32px;
     font-weight: 600;
-    margin: 0 0 8px 0;
+    margin: 0 0 4px 0;
     letter-spacing: -0.5px;
 }
 
@@ -96,7 +96,7 @@ body {
 
 /* SEÇÕES */
 .cv-secao {
-    margin-bottom: 24px;
+    margin-bottom: 14px; /* Margem entre as seções reduzida */
 }
 
 .cv-titulo-secao {
@@ -114,20 +114,22 @@ body {
 
 /* ITENS (Experiência e Educação) */
 .cv-item {
-    margin-bottom: 16px;
+    margin-bottom: 12px; /* Espaçamento reduzido para caber em 1 página */
 }
 
 .cv-item-header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-start; /* Alinha tudo pelo topo, mesmo se quebrar linha */
     margin-bottom: 4px;
+    gap: 16px; /* Força uma distância segura entre o cargo e a data */
 }
 
 .cv-cargo {
     font-size: 14px;
     font-weight: 600;
     margin: 0;
+    flex: 1; /* Permite que o título ocupe apenas o espaço que tem disponível */
 }
 
 .cv-empresa {
@@ -139,6 +141,8 @@ body {
 .cv-tempo {
     font-size: 12px;
     color: var(--cor-secundaria-cv);
+    text-align: right; /* Garante que o texto fique sempre encostado na direita */
+    flex-shrink: 0; /* Impede que a data seja "esmagada" pelo texto do cargo */
 }
 
 .cv-desc {
