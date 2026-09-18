@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jheniffer Biral | Currículo</title>
+    
+    <!-- Fontes Editoriais -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Estilo específico para o currículo -->
+    <link rel="stylesheet" href="resume.css">
+    
+    <!-- Biblioteca de PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- BARRA DE FERRAMENTAS (Oculta na impressão) -->
+    <div class="actions-bar no-print">
+        <a href="index.html" class="btn-voltar">← Voltar ao Portfólio</a>
+        
+        <div class="idiomas-resume">
+            <button class="lang-btn ativo" onclick="switchLang('pt')">PT</button>
+            <button class="lang-btn" onclick="switchLang('en')">EN</button>
+            <button class="lang-btn" onclick="switchLang('fr')">FR</button>
+            <button class="lang-btn" onclick="switchLang('es')">ES</button>
+        </div>
+
+        <button class="btn-pdf" onclick="gerarPDF()" id="txt-btn-pdf">GERAR PDF</button>
+    </div>
+
+    <!-- FOLHA A4 DO CURRÍCULO -->
+    <div class="folha-a4" id="cv-folha">
+        
+        <header class="cv-header">
+            <h1 class="cv-nome">Jheniffer Matias Biral</h1>
+            <div class="cv-contatos">
+                <span>jheniffer.biral@gmail.com</span> • 
+                <span>linkedin.com/in/jhenifferbiral</span> • 
+                <span>Curitiba, PR - Brasil</span>
+            </div>
+        </header>
+
+        <!-- Seção: Experiência -->
+        <section class="cv-secao">
+            <h2 class="cv-titulo-secao" id="titulo-exp">EXPERIÊNCIAS</h2>
+            <div class="cv-linha-separadora"></div>
+            <div id="lista-exp"></div>
+        </section>
+
+        <!-- Seção: Educação -->
+        <section class="cv-secao">
+            <h2 class="cv-titulo-secao" id="titulo-edu">EDUCAÇÃO</h2>
+            <div class="cv-linha-separadora"></div>
+            <div id="lista-edu"></div>
+        </section>
+
+        <!-- Seção: Habilidades -->
+        <section class="cv-secao">
+            <h2 class="cv-titulo-secao" id="titulo-hab">HABILIDADES (Skills & Softwares)</h2>
+            <div class="cv-linha-separadora"></div>
+            <div id="lista-hab"></div>
+        </section>
+
+    </div>
+
+    <!-- INTELIGÊNCIA DOS IDIOMAS (Sem necessidade de data.json externo) -->
+    <script>
+        const cvData = {
+            pt: {
+                btn_pdf: "GERAR PDF",
+                titulos: { exp: "EXPERIÊNCIA", edu: "EDUCAÇÃO", hab: "HABILIDADES (Skills & Softwares)" },
+                experiencias: [
+                    { cargo: "Estagiária de Projetos", empresa: "Grupo Boticário", tempo: "Jul/2025 – Presente (1 ano e 3 meses)", desc: "Atuação na governança financeira (Capex/Opex) de projetos de expansão fabril e logística. Desenvolvimento de dashboards e otimização de KPIs de engenharia para garantir a confiabilidade de dados e apoiar a tomada de decisões estratégicas." },
+                    { cargo: "Pesquisadora de Iniciação Científica (PIBIC)", empresa: "Universidade Federal do Paraná", tempo: "Set/2025 – Presente (1 ano e 1 mês)", desc: "Pesquisa acadêmica focada na aplicação de Inteligência Artificial nas etapas do ciclo BPM (Business Process Management). Trabalho contínuo com otimização de processos e estratégias de refinamento de machine learning." },
+                    { cargo: "Estagiária de Direção Operacional (Supply Chain Américas)", empresa: "Renault do Brasil", tempo: "Jul/2023 – Jul/2025 (2 anos e 1 mês)", desc: "Acompanhamento técnico na implantação do programa de Manufatura Digital 4.0 (GOPRO, APS). Atuação direta no chão de fábrica para suporte de sistemas corporativos, padronização de processos e treinamento técnico de equipes operacionais, bem como confecção de documentações como Instruções de Trabalho e manuais operacionais." },
+                    { cargo: "Estagiária em Obras (Administrativo/Qualidade)", empresa: "Hype Empreendimentos", tempo: "Mar/2022 – Ago/2023 (1 ano e 6 meses)", desc: "Suporte em gestão administrativa de obras e controle rigoroso de qualidade em construções. Atuação em procedimentos de controladoria para garantir eficiência e conformidade técnica no canteiro de obras." }
+                ],
+                educacao: [
+                    { curso: "Engenharia de Produção", inst: "Universidade Federal do Paraná (UFPR)", tempo: "Fev/2024 – Em andamento (Previsão de formação: 2027/2)", desc: "Foco em otimização de processos, integração tecnológica e visão sistêmica. Expansão do aprendizado por meio de pesquisa em Inteligência Artificial e forte engajamento em atividades extracurriculares e eventos comunitários estudantis." },
+                    { curso: "Técnico em Eletrônica", inst: "Instituto Federal do Paraná (IFPR)", tempo: "Fev/2017 – Dez/2019", desc: "A base técnica que estruturou meu pensamento lógico e analítico, conectando o entendimento de hardware e sistemas à resolução prática de problemas." }
+                ],
+                habilidades: `
+                    <p><strong>Idiomas:</strong> Português (Nativo) | Inglês (C1 - Avançado) | Espanhol (B1 - Intermediário) | Francês (B1 - Intermediário).</p>
+                    <p><strong>Gestão de Projetos & Metodologias:</strong> Kanban, governança financeira (Capex/Opex), monitoramento de KPIs e elaboração de documentações operacionais (FOS/FOP).</p>
+                    <p><strong>Governança de Dados & Automação:</strong> Looker Studio (Data Studio), Ecossistema Google (integração com Google Colab e Apps Script para automações administrativas), Google Sites, automações via Slack.</p>
+                    <p><strong>Engenharia & Manufatura Digital:</strong> Sistemas Symphony (APS e GOPRO).</p>
+                    <p><strong>Toolkit Criativo e Organizacional:</strong> Notion, Trello, Canva.</p>
+                `
+            },
+            en: {
+                btn_pdf: "GENERATE PDF",
+                titulos: { exp: "EXPERIENCE TIMELINE", edu: "EDUCATION", hab: "SKILLS & SOFTWARE" },
+                experiencias: [
+                    { cargo: "Project Intern", empresa: "Grupo Boticário", tempo: "Jul 2025 – Present (1 year and 3 months)", desc: "Financial governance (Capex/Opex) for factory expansion and logistics projects. Developed dashboards and optimized engineering KPIs to ensure data reliability and support strategic decision-making." },
+                    { cargo: "Undergraduate Researcher (PIBIC)", empresa: "Universidade Federal do Paraná", tempo: "Sep 2025 – Present (1 year and 1 month)", desc: "Academic research focused on the application of Artificial Intelligence in the stages of the BPM (Business Process Management) cycle. Continuous work with process optimization and machine learning refinement strategies." },
+                    { cargo: "Operational Management Intern (Supply Chain Americas)", empresa: "Renault do Brasil", tempo: "Jul 2023 – Jul 2025 (2 years and 1 month)", desc: "Technical support in the implementation of the Digital Manufacturing 4.0 program (GOPRO, APS). Direct action on the shop floor for corporate systems support, process standardization, and technical training of operational teams, as well as drafting documentation such as Work Instructions and operational manuals." },
+                    { cargo: "Construction Intern (Administrative/Quality)", empresa: "Hype Empreendimentos", tempo: "Mar 2022 – Aug 2023 (1 year and 6 months)", desc: "Support in administrative construction management and strict quality control. Executed controllership procedures to ensure efficiency and technical compliance on the construction site." }
+                ],
+                educacao: [
+                    { curso: "Industrial Engineering", inst: "Universidade Federal do Paraná (UFPR)", tempo: "Feb 2024 – Present (Expected Graduation: 2027/2)", desc: "Focused on process optimization, technological integration, and systemic thinking. Expanded learning through Artificial Intelligence research and strong engagement in extracurricular activities and student community events." },
+                    { curso: "Electronics Technician", inst: "Instituto Federal do Paraná (IFPR)", tempo: "Feb 2017 – Dec 2019", desc: "The technical foundation that structured my logical and analytical thinking, bridging the understanding of hardware and systems with practical problem-solving." }
+                ],
+                habilidades: `
+                    <p><strong>Languages:</strong> Portuguese (Native) | English (C1 - Advanced) | Spanish (B1 - Intermediate) | French (B1 - Intermediate).</p>
+                    <p><strong>Project Management & Methodologies:</strong> Kanban, financial governance (Capex/Opex), KPI monitoring, and operational documentation drafting (SOPs).</p>
+                    <p><strong>Data Governance & Automation:</strong> Looker Studio (Data Studio), Google Ecosystem (integration with Google Colab and Apps Script for administrative automations), Google Sites, Slack automations.</p>
+                    <p><strong>Digital Manufacturing & Engineering:</strong> Symphony Systems (APS and GOPRO).</p>
+                    <p><strong>Creative & Organizational Toolkit:</strong> Notion, Trello, Canva.</p>
+                `
+            },
+            fr: {
+                btn_pdf: "GÉNÉRER PDF",
+                titulos: { exp: "CHRONOLOGIE DES EXPÉRIENCES", edu: "ÉDUCATION", hab: "COMPÉTENCES (Skills & Softwares)" },
+                experiencias: [
+                    { cargo: "Stagiaire en Gestion de Projets", empresa: "Grupo Boticário", tempo: "Juil. 2025 – Présent (1 an et 3 mois)", desc: "Gouvernance financière (Capex/Opex) pour des projets d'expansion d'usines et de logistique. Développement de tableaux de bord et optimisation des KPI d'ingénierie pour garantir la fiabilité des données et soutenir les décisions stratégiques." },
+                    { cargo: "Chercheuse de Premier Cycle (PIBIC)", empresa: "Universidade Federal do Paraná", tempo: "Sept. 2025 – Présent (1 an et 1 mois)", desc: "Recherche académique axée sur l'application de l'Intelligence Artificielle dans les étapes du cycle BPM (Business Process Management). Travail continu sur l'optimisation des processus et les stratégies d'amélioration du machine learning." },
+                    { cargo: "Stagiaire en Direction Opérationnelle (Supply Chain Amériques)", empresa: "Renault do Brasil", tempo: "Juil. 2023 – Juil. 2025 (2 ans et 1 mois)", desc: "Suivi technique dans le déploiement du programme de Fabrication Digitale 4.0 (GOPRO, APS). Action directe sur le terrain pour le support des systèmes d'entreprise, la standardisation des processus et la formation technique des équipes opérationnelles, ainsi que la rédaction de documents tels que les Instructions de Travail et les manuels opérationnels." },
+                    { cargo: "Stagiaire en Bâtiment (Administratif/Qualité)", empresa: "Hype Empreendimentos", tempo: "Mars 2022 – Août 2023 (1 an et 6 mois)", desc: "Soutien à la gestion administrative des chantiers et contrôle qualité rigoureux. Exécution de procédures de contrôle de gestion pour assurer l'efficacité et la conformité technique sur le chantier." }
+                ],
+                educacao: [
+                    { curso: "Génie Industriel", inst: "Universidade Federal do Paraná (UFPR)", tempo: "Fév. 2024 – Présent (Diplôme prévu : 2027/2)", desc: "Axé sur l'optimisation des processus, l'intégration technologique et la vision systémique. Élargissement de l'apprentissage par la recherche en Intelligence Artificielle et un fort engagement dans des activités parascolaires et des événements communautaires étudiants." },
+                    { curso: "Technicienne en Électronique", inst: "Instituto Federal do Paraná (IFPR)", tempo: "Fév. 2017 – Déc. 2019", desc: "La base technique qui a structuré ma pensée logique et analytique, reliant la compréhension du matériel et des systèmes à la résolution pratique de problèmes." }
+                ],
+                habilidades: `
+                    <p><strong>Langues :</strong> Portugais (Natif) | Anglais (C1 - Avancé) | Espagnol (B1 - Intermédiaire) | Français (B1 - Intermédiaire).</p>
+                    <p><strong>Gestion de Projets & Méthodologies :</strong> Kanban, gouvernance financière (Capex/Opex), suivi des KPI et élaboration de documents opérationnels (FOS/FOP).</p>
+                    <p><strong>Gouvernance des Données & Automatisation :</strong> Looker Studio (Data Studio), Écosystème Google (intégration avec Google Colab et Apps Script pour les automatisations administratives), Google Sites, automatisations Slack.</p>
+                    <p><strong>Fabrication Digitale & Ingénierie :</strong> Systèmes Symphony (APS et GOPRO).</p>
+                    <p><strong>Boîte à Outils Créative et Organisationnelle :</strong> Notion, Trello, Canva.</p>
+                `
+            },
+            es: {
+                btn_pdf: "GENERAR PDF",
+                titulos: { exp: "LÍNEA DE TIEMPO DE EXPERIENCIAS", edu: "EDUCACIÓN", hab: "HABILIDADES (Skills & Softwares)" },
+                experiencias: [
+                    { cargo: "Pasante de Proyectos", empresa: "Grupo Boticário", tempo: "Jul 2025 – Presente (1 año y 3 meses)", desc: "Gobernanza financiera (Capex/Opex) de proyectos de expansión de fábricas y logística. Desarrollo de dashboards y optimización de KPIs de ingeniería para garantizar la confiabilidad de los datos y apoyar la toma de decisiones estratégicas." },
+                    { cargo: "Investigadora Académica (PIBIC)", empresa: "Universidade Federal do Paraná", tempo: "Sep 2025 – Presente (1 año y 1 mes)", desc: "Investigación académica centrada en la aplicación de Inteligencia Artificial en las etapas del ciclo BPM (Business Process Management). Trabajo continuo con optimización de procesos y estrategias de refinamiento de machine learning." },
+                    { cargo: "Pasante de Dirección Operativa (Supply Chain Américas)", empresa: "Renault do Brasil", tempo: "Jul 2023 – Jul 2025 (2 años y 1 mes)", desc: "Seguimiento técnico en la implementación del programa de Manufactura Digital 4.0 (GOPRO, APS). Actuación directa en la planta para el soporte de sistemas corporativos, estandarización de procesos y capacitación técnica de equipos operativos, así como la elaboración de documentación como Instrucciones de Trabajo y manuales operativos." },
+                    { cargo: "Pasante de Obras (Administrativo/Calidad)", empresa: "Hype Empreendimentos", tempo: "Mar 2022 – Ago 2023 (1 año y 6 meses)", desc: "Soporte en gestión administrativa de obras y riguroso control de calidad en construcciones. Actuación en procedimientos de control para garantizar la eficiencia y el cumplimiento técnico en la obra." }
+                ],
+                educacao: [
+                    { curso: "Ingeniería de Producción", inst: "Universidade Federal do Paraná (UFPR)", tempo: "Feb 2024 – Presente (Graduación prevista: 2027/2)", desc: "Enfoque en la optimización de procesos, integración tecnológica y visión sistémica. Expansión del aprendizaje a través de la investigación en Inteligencia Artificial y un fuerte compromiso en actividades extracurriculares y eventos comunitarios estudiantiles." },
+                    { curso: "Técnico en Electrónica", inst: "Instituto Federal do Paraná (IFPR)", tempo: "Feb 2017 – Dic 2019", desc: "La base técnica que estructuró mi pensamiento lógico y analítico, conectando la comprensión de hardware y sistemas con la resolución práctica de problemas." }
+                ],
+                habilidades: `
+                    <p><strong>Idiomas:</strong> Portugués (Nativo) | Inglés (C1 - Avanzado) | Español (B1 - Intermedio) | Francés (B1 - Intermedio).</p>
+                    <p><strong>Gestión de Proyectos y Metodologías:</strong> Kanban, gobernanza financiera (Capex/Opex), monitoreo de KPIs y elaboración de documentación operativa (FOS/FOP).</p>
+                    <p><strong>Gobernanza de Datos y Automatización:</strong> Looker Studio (Data Studio), Ecosistema Google (integración con Google Colab y Apps Script para automatizaciones administrativas), Google Sites, automatizaciones vía Slack.</p>
+                    <p><strong>Manufactura Digital e Ingeniería:</strong> Sistemas Symphony (APS y GOPRO).</p>
+                    <p><strong>Toolkit Creativo y Organizacional:</strong> Notion, Trello, Canva.</p>
+                `
+            }
+        };
+
+        let currentLang = 'pt';
+
+        function switchLang(lang) {
+            currentLang = lang;
+            const data = cvData[lang];
+
+            // Atualiza botões
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('ativo'));
+            event.target.classList.add('ativo');
+            document.getElementById('txt-btn-pdf').innerText = data.btn_pdf;
+
+            // Atualiza Títulos
+            document.getElementById('titulo-exp').innerText = data.titulos.exp;
+            document.getElementById('titulo-edu').innerText = data.titulos.edu;
+            document.getElementById('titulo-hab').innerText = data.titulos.hab;
+
+            // Atualiza Experiências
+            document.getElementById('lista-exp').innerHTML = data.experiencias.map(exp => `
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3 class="cv-cargo">${exp.cargo} | <span class="cv-empresa">${exp.empresa}</span></h3>
+                        <span class="cv-tempo">${exp.tempo}</span>
+                    </div>
+                    <p class="cv-desc">${exp.desc}</p>
+                </div>
+            `).join('');
+
+            // Atualiza Educação
+            document.getElementById('lista-edu').innerHTML = data.educacao.map(edu => `
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <h3 class="cv-cargo">${edu.curso} | <span class="cv-empresa">${edu.inst}</span></h3>
+                        <span class="cv-tempo">${edu.tempo}</span>
+                    </div>
+                    <p class="cv-desc">${edu.desc}</p>
+                </div>
+            `).join('');
+
+            // Atualiza Habilidades
+            document.getElementById('lista-hab').innerHTML = `<div class="cv-hab-texto">${data.habilidades}</div>`;
+        }
+
+        // Função para gerar o PDF A4 perfeito
+        function gerarPDF() {
+            const element = document.getElementById('cv-folha');
+            const opt = {
+                margin:       0,
+                filename:     `Jheniffer_Biral_CV_${currentLang.toUpperCase()}.pdf`,
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2, useCORS: true },
+                jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            html2pdf().set(opt).from(element).save();
+        }
+
+        // Inicia em PT
+        window.onload = () => switchLang('pt');
+    </script>
+</body>
+</html>

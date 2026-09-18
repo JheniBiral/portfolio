@@ -1,0 +1,168 @@
+/* RESET E VARIÁVEIS DO CURRÍCULO */
+:root {
+    --cor-texto-cv: #1A1A1A;
+    --cor-secundaria-cv: #555555;
+    --cor-linha: #E5E7EB;
+    --fonte-titulos: 'Lora', serif;
+    --fonte-textos: 'Inter', sans-serif;
+    --azul-botoes: #4682B4;
+}
+
+body {
+    background-color: #F3F4F6; /* Fundo cinza para a tela, para o A4 destacar */
+    margin: 0;
+    font-family: var(--fonte-textos);
+    color: var(--cor-texto-cv);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* BARRA DE AÇÕES SUPERIOR */
+.actions-bar {
+    background-color: #FFFFFF;
+    padding: 16px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.btn-voltar {
+    color: var(--cor-secundaria-cv);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn-voltar:hover { color: var(--azul-botoes); }
+
+.idiomas-resume { display: flex; gap: 12px; }
+
+.lang-btn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-family: var(--fonte-textos);
+    color: var(--cor-secundaria-cv);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.lang-btn.ativo { color: var(--azul-botoes); }
+
+.btn-pdf {
+    background-color: var(--azul-botoes);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--fonte-textos);
+    font-size: 12px;
+}
+
+/* A FOLHA DO CURRÍCULO (A4) */
+.folha-a4 {
+    background-color: #FFFFFF;
+    max-width: 210mm; /* Largura exata de um A4 */
+    min-height: 297mm; /* Altura exata de um A4 */
+    margin: 40px auto;
+    padding: 20mm; /* Margem interna padrão de impressão */
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* CABEÇALHO DO CV */
+.cv-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.cv-nome {
+    font-family: var(--fonte-titulos);
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.5px;
+}
+
+.cv-contatos {
+    font-size: 13px;
+    color: var(--cor-secundaria-cv);
+}
+
+/* SEÇÕES */
+.cv-secao {
+    margin-bottom: 24px;
+}
+
+.cv-titulo-secao {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0 0 4px 0;
+}
+
+.cv-linha-separadora {
+    height: 1px;
+    background-color: var(--cor-texto-cv);
+    margin-bottom: 16px;
+}
+
+/* ITENS (Experiência e Educação) */
+.cv-item {
+    margin-bottom: 16px;
+}
+
+.cv-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.cv-cargo {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.cv-empresa {
+    font-weight: 400;
+    font-style: italic;
+    font-family: var(--fonte-titulos);
+}
+
+.cv-tempo {
+    font-size: 12px;
+    color: var(--cor-secundaria-cv);
+}
+
+.cv-desc {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+    color: var(--cor-texto-cv);
+}
+
+/* HABILIDADES */
+.cv-hab-texto p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 0 8px 0;
+}
+
+/* ===== REGRAS PARA QUANDO O USUÁRIO IMPRIMIR OU GERAR PDF ===== */
+@media print {
+    body { background-color: #FFFFFF; }
+    .no-print { display: none !important; }
+    .folha-a4 {
+        margin: 0;
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+    }
+}
