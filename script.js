@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setupLanguageToggle();
             setupTimelineInteractions();
             setupTabsInteractions();
-            setupPDFGeneration();
+            //setupPDFGeneration();
             setupEmailCopy();
         })
         .catch(error => console.error("Erro ao carregar os dados:", error));
@@ -24,7 +24,7 @@ function updateContent(lang) {
     const data = portfolioData[lang];
     
     // Header & Hero
-    document.getElementById('btn-pdf').innerText = data.header.botao_pdf;
+    document.getElementById('btn-resume').innerText = data.header.botao_resume;
     document.getElementById('hero-citacao').innerText = data.hero.citacao;
     document.getElementById('hero-subtitulo').innerText = data.hero.subtitulo;
 
@@ -92,7 +92,7 @@ function updateContent(lang) {
         `;
         containerDepoimentos.appendChild(card);
     });
-    
+
     // Footer
     document.getElementById('footer-titulo').innerText = data.footer_titulo;
 }

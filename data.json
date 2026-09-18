@@ -2,7 +2,7 @@
   "pt": {
     "header": {
       "idiomas": ["PT", "EN", "FR", "ES"],
-      "botao_pdf": "GERAR PDF"
+      "botao_resume": "Currículo"
     },
     "hero": {
       "citacao": "\"Juntar-se é um começo; manter-se unido é progresso; trabalhar junto é sucesso.\" — Henry Ford",
@@ -122,7 +122,7 @@
   "en": {
     "header": {
       "idiomas": ["PT", "EN", "FR", "ES"],
-      "botao_pdf": "GENERATE PDF"
+      "botao_resume": "Resume"
     },
     "hero": {
       "citacao": "\"Coming together is a beginning; keeping together is progress; working together is success.\" — Henry Ford",
@@ -242,7 +242,7 @@
   "fr": {
     "header": {
       "idiomas": ["PT", "EN", "FR", "ES"],
-      "botao_pdf": "GÉNÉRER PDF"
+      "botao_resume": "CV"
     },
     "hero": {
       "citacao": "\"Se réunir est un début ; rester ensemble est un progrès ; travailler ensemble est la réussite.\" — Henry Ford",
@@ -362,7 +362,7 @@
   "es": {
     "header": {
       "idiomas": ["PT", "EN", "FR", "ES"],
-      "botao_pdf": "GENERAR PDF"
+      "botao_resume": "Currículum"
     },
     "hero": {
       "citacao": "\"Juntarse es un comienzo; mantenerse juntos es progreso; trabajar juntos es el éxito.\" — Henry Ford",
