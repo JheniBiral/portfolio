@@ -27,7 +27,7 @@
           "id": "renault",
           "empresa": "Renault do Brasil",
           "tempo": "2a 1m",
-          "descricao": "Liderança técnica na implantação do programa de Manufatura Digital 4.0 (GOPRO, APS). Atuação direta no gemba para suporte de sistemas corporativos, padronização de processos e treinamento técnico."
+          "descricao": "Liderança técnica na implantação do programa de Manufatura Digital 4.0 (GOPROD, APS). Atuação direta no gemba para suporte de sistemas corporativos, padronização de processos e treinamento técnico."
         },
         {
           "id": "hype",
@@ -98,7 +98,7 @@
       "hard_skills": [
         { "nome": "Looker Studio", "progresso": "40%" },
         { "nome": "Ecossistema Google (Colab, Gemini, Docs...)", "progresso": "70%" },
-        { "nome": "Symphony (APS, GOPRO)", "progresso": "65%" },
+        { "nome": "Symphony (APS, GOPROD)", "progresso": "65%" },
         { "nome": "Notion", "progresso": "50%" },
         { "nome": "Bizagi", "progresso": "75%" },
         { "nome": "BPMN.io", "progresso": "75%" }
@@ -147,7 +147,7 @@
           "id": "renault",
           "empresa": "Renault do Brasil",
           "tempo": "2y 1m",
-          "descricao": "Technical leadership in deploying the Digital Manufacturing 4.0 program (GOPRO, APS). Acted directly on the gemba to provide corporate system support, standardize processes, and conduct technical training."
+          "descricao": "Technical leadership in deploying the Digital Manufacturing 4.0 program (GOPROD, APS). Acted directly on the gemba to provide corporate system support, standardize processes, and conduct technical training."
         },
         {
           "id": "hype",
@@ -218,7 +218,7 @@
       "hard_skills": [
         { "nome": "Looker Studio", "progresso": "40%" },
         { "nome": "Google Ecosystem (Colab, Gemini, Docs...)", "progresso": "70%" },
-        { "nome": "Symphony (APS, GOPRO)", "progresso": "65%" },
+        { "nome": "Symphony (APS, GOPROD)", "progresso": "65%" },
         { "nome": "Notion", "progresso": "50%" },
         { "nome": "Bizagi", "progresso": "75%" },
         { "nome": "BPMN.io", "progresso": "75%" }
@@ -267,7 +267,7 @@
           "id": "renault",
           "empresa": "Renault do Brasil",
           "tempo": "2a 1m",
-          "descricao": "Leadership technique dans le déploiement du programme de Fabrication Digitale 4.0 (GOPRO, APS). Intervention directe sur le gemba pour le support des systèmes d'entreprise et la formation technique."
+          "descricao": "Leadership technique dans le déploiement du programme de Fabrication Digitale 4.0 (GOPROD, APS). Intervention directe sur le gemba pour le support des systèmes d'entreprise et la formation technique."
         },
         {
           "id": "hype",
@@ -338,7 +338,7 @@
       "hard_skills": [
         { "nome": "Looker Studio", "progresso": "40%" },
         { "nome": "Écosystème Google (Colab, Gemini, Docs...)", "progresso": "70%" },
-        { "nome": "Symphony (APS, GOPRO)", "progresso": "65%" },
+        { "nome": "Symphony (APS, GOPROD)", "progresso": "65%" },
         { "nome": "Notion", "progresso": "50%" },
         { "nome": "Bizagi", "progresso": "75%" },
         { "nome": "BPMN.io", "progresso": "75%" }
@@ -387,7 +387,7 @@
           "id": "renault",
           "empresa": "Renault do Brasil",
           "tempo": "2a 1m",
-          "descricao": "Liderazgo técnico en la implementación del programa de Manufactura Digital 4.0 (GOPRO, APS). Actuación directa en el gemba para soporte de sistemas corporativos y capacitación técnica."
+          "descricao": "Liderazgo técnico en la implementación del programa de Manufactura Digital 4.0 (GOPROD, APS). Actuación directa en el gemba para soporte de sistemas corporativos y capacitación técnica."
         },
         {
           "id": "hype",
@@ -458,7 +458,7 @@
       "hard_skills": [
         { "nome": "Looker Studio", "progresso": "40%" },
         { "nome": "Ecosistema Google (Colab, Gemini, Docs...)", "progresso": "70%" },
-        { "nome": "Symphony (APS, GOPRO)", "progresso": "65%" },
+        { "nome": "Symphony (APS, GOPROD)", "progresso": "65%" },
         { "nome": "Notion", "progresso": "50%" },
         { "nome": "Bizagi", "progresso": "75%" },
         { "nome": "BPMN.io", "progresso": "75%" }
